@@ -35,10 +35,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto"> <!-- Menambahkan ms-auto untuk memindahkan menu ke kanan -->
                 <li class="nav-item text-center">
-                    <a class="nav-link text-white" href="google.com"><i class="bi bi-lightbulb"></i> - Petunjuk Penggunaan</a>
+                    <a class="nav-link text-white" href="petunjuk-penggunaan.php"><i class="bi bi-lightbulb"></i> - Petunjuk Penggunaan</a>
                 </li>
                 <li class="nav-item text-center">
-                    <a class="nav-link text-white" href="index.php"><i class="bi bi-info-circle"></i> - Tentang</a>
+                    <a class="nav-link text-white" href="tentang.php"><i class="bi bi-info-circle"></i> - Tentang</a>
                 </li>
             </ul>
         </div>
@@ -65,9 +65,7 @@
                     <p class="card-text">
                     Bukit Panyangrayan adalah salah satu objek wisata alam unggulan di Tasikmalaya yang menawarkan 
                     panorama indah dari ketinggian. Terletak di kawasan pegunungan yang dikelilingi pepohonan hijau, 
-                    Bukit Panyangrayan menjadi destinasi favorit bagi pecinta alam dan para pencari ketenangan. Daya 
-                    tarik utama dari Bukit Panyangrayan adalah pemandangan menakjubkan yang membentang sejauh mata 
-                    memandang.
+                    Bukit Panyangrayan menjadi destinasi favorit bagi pecinta alam dan para pencari ketenangan.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -85,8 +83,7 @@
                     <p class="card-text">
                     Pemandian Air Panas Arga Hotsprings adalah destinasi wisata alam di Tasikmalaya yang menawarkan 
                     pengalaman relaksasi dengan suasana asri dan menenangkan. Terletak di kawasan perbukitan yang sejuk, 
-                    lokasi ini memadukan keindahan alam dengan manfaat kesehatan dari sumber air panas alami. Pengunjung 
-                    dapat menikmati berendam di kolam air panas yang bersih dan terjaga suhunya.
+                    lokasi ini memadukan keindahan alam dengan manfaat kesehatan dari sumber air panas alami.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -99,11 +96,16 @@
             <div class="card h-100" data-name="Situ Gede">
                 <img src="thumbnail/Thumbnail Situ Gede.jpg" class="card-img-top" alt="Image 3">
                 <div class="card-body">
-                    <h5 class="card-title">Situ Gede (COMING SOON)</h5>
-                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <h5 class="card-title">Situ Gede</h5>
+                    <p class="card-text">
+                    Situ Gede adalah salah satu objek wisata alam populer di Tasikmalaya yang menawarkan suasana 
+                    tenang dan panorama alam yang memikat. Berupa danau alami yang dikelilingi pepohonan rindang, 
+                    Situ Gede menjadi tempat ideal untuk melepas penat dan menikmati waktu berkualitas bersama keluarga 
+                    atau teman.
+                    </p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn">Lihat Selengkapnya</a>
+                    <a href="informasi-situ-gede.php" class="btn">Lihat Selengkapnya</a>
                 </div>
             </div>
         </div>

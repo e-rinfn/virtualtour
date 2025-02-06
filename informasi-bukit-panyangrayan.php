@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto"> <!-- Menambahkan ms-auto untuk memindahkan menu ke kanan -->
                 <li class="nav-item text-center">
-                    <a class="nav-link text-white" href="google.com"><i class="bi bi-lightbulb"></i> - Petunjuk Penggunaan</a>
+                    <a class="nav-link text-white" href="petunjuk-penggunaan.php"><i class="bi bi-lightbulb"></i> - Petunjuk Penggunaan</a>
                 </li>
                 <li class="nav-item text-center">
                     <a class="nav-link text-white" href="index.php"><i class="bi bi-arrow-left"></i> Kembali</a>
@@ -82,16 +82,39 @@
                 </ul>
             </div>
             <h4>Peta Lokasi :</h4>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.1613508762257!2d108.17564907574575!3d-7.447394273390923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e65f9e7f9a6500b%3A0xbad2ab4a702f44c1!2sBukit%20Panyangrayan!5e0!3m2!1sid!2sid!4v1736655647315!5m2!1sid!2sid" 
-                width="350px"
-                height="200px" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>        
-        </div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.1613508762257!2d108.17564907574575!3d-7.447394273390923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e65f9e7f9a6500b%3A0xbad2ab4a702f44c1!2sBukit%20Panyangrayan!5e0!3m2!1sid!2sid!4v1736655647315!5m2!1sid!2sid" 
+                    width="350px"
+                    height="200px" 
+                    style="border:0; margin-left: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- Tombol Bagikan -->
+                <button id="shareBtn" class="btn btn-primary m-3 mb-5">Bagikan - <i class="bi bi-share"></i></button>
+            </div>
+
+            <!-- JavaScript untuk berbagi link -->
+            <script>
+            document.getElementById("shareBtn").addEventListener("click", function() {
+                const currentURL = window.location.href; // Mendapatkan URL halaman saat ini
+                const shareText = `Lihat lokasi ini di Virtual Tour: ${currentURL}`;
+                
+                if (navigator.share) {
+                    // Gunakan Web Share API jika didukung
+                    navigator.share({
+                        title: document.title,
+                        text: shareText,
+                        url: currentURL
+                    }).catch(err => console.log("Gagal berbagi:", err));
+                } else {
+                    // Fallback: Salin URL ke clipboard
+                    navigator.clipboard.writeText(currentURL);
+                    alert("Link telah disalin ke clipboard!");
+                }
+            });
+            </script>
 
         <div class="col-md-4 vertical-images">
             <h3>Virtual Tour 360</h3>

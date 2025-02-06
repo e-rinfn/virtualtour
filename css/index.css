@@ -148,6 +148,7 @@ a.nav-link.text-white:active {
 .card-text {
     font-size: 1rem;
     color: #6c757d;
+    text-align: justify;
 }
 
 /* Styling untuk card footer */
@@ -171,7 +172,7 @@ a.nav-link.text-white:active {
 }
 
 .card-footer .btn:hover {
-    background-color: #FFEB00; /* Warna hijau lebih gelap saat hover */
+    background-color: #5a6268; /* Warna hijau lebih gelap saat hover */
 }
 
 /* Styling untuk footer */

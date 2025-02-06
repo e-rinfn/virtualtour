@@ -28,8 +28,8 @@ function changeScene(scene) {
 
 // Function to show modal
 function showModal(_, args) {
-    document.getElementById("modalTitle").innerText = args.title;
-    document.getElementById("modalContent").innerText = args.content;
+    document.getElementById("modalTitle").innerHTML= args.title;
+    document.getElementById("modalContent").innerHTML = args.content;
     $('#infoModal').modal('show'); // Menampilkan modal
 }
 

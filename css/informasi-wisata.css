@@ -97,6 +97,7 @@ a.nav-link.text-white:active {
 /* Styling untuk deskripsi */
 .description {
     margin-top: 15px;
+    text-align: justify;
 }
 
 /* Styling untuk card gambar */
